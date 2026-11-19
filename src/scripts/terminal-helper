@@ -63,10 +63,11 @@ declare -A terminals=(
     ["xterm"]="xterm -e $cmd"
     ["ptyxis"]="ptyxis -e $cmd"
 )
+# Packarch : Ghostty d'abord (terminal des bureaux Packarch et Openbox)
 declare -a term_order=(
+    "ghostty"
     "alacritty"
     "rio"
-    "ghostty"
     "kitty"
     "wezterm"
     "konsole"
